@@ -1,5 +1,6 @@
 .columns{
   display: flex;
+  flex-wrap: wrap;
   margin: ($settings-column-gap * -1) ($settings-column-gap * -1) auto;
   &.no-gap {
     .column {

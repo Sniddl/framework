@@ -35,6 +35,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: -0.5rem -0.5rem auto;
 }
 
@@ -236,7 +238,6 @@ h3 {
 }
 
 p {
-  color: #555;
   height: auto;
   line-height: 1.45;
 }
