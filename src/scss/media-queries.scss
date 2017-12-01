@@ -1,0 +1,19 @@
+@include for(phone) {
+  @include column--phone()
+}
+
+@include for(phablet) {
+  @include column--phablet()
+}
+
+@include for(tablet) {
+  @include column--tablet()
+}
+
+@include for(laptop) {
+  @include column--laptop()
+}
+
+@include for(desktop) {
+  @include column--desktop()
+}

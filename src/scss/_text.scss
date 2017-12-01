@@ -1,0 +1,20 @@
+@for $i from 1 through 6 {
+  .h#{$i}, h#{$i} {
+    font-size: #{floor(((6 - $i + 1) / 6 + 1) * 10) / 10}rem;
+    margin: #{floor(($i / 6 + 1) * 10) / 10}rem 0;
+  }
+}
+
+
+p,
+h2,
+h3 {
+  orphans: 3;
+  widows: 3;
+}
+
+p {
+  color: #555;
+  height: auto;
+  line-height: 1.45;
+}

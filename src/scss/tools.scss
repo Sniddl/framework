@@ -1,0 +1,42 @@
+.inline {
+  display: inline-block;
+}
+.no-border {
+  border:none;
+}
+.shadow {
+  border:none;
+  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.12);
+}
+
+@for $i from 0 through 10 {
+  .padding-#{$i} {padding: #{$i}rem;}
+  .margin-#{$i} {margin: #{$i}rem;}
+}
+
+@for $i from 0 through 10 {
+  .padding-left-#{$i} {padding-left: #{$i}rem;}
+  .padding-right-#{$i} {padding-right: #{$i}rem;}
+  .padding-top-#{$i} {padding-top: #{$i}rem;}
+  .padding-bottom#{$i} {padding-bottom: #{$i}rem;}
+  .margin-left-#{$i} {margin-left: #{$i}rem;}
+  .margin-right-#{$i} {margin-right: #{$i}rem;}
+  .margin-top-#{$i} {margin-top: #{$i}rem;}
+  .margin-bottom-#{$i} {margin-bottom: #{$i}rem;}
+}
+
+@for $i from 1 through 9 {
+  .padding-0#{$i} {padding: #{$i/10}rem;}
+  .margin-0#{$i} {margin: #{$i/10}rem;}
+}
+
+@for $i from 1 through 9 {
+  .padding-left-0#{$i} {padding-left: #{$i/10}rem;}
+  .padding-right-0#{$i} {padding-right: #{$i/10}rem;}
+  .padding-top-0#{$i} {padding-top: #{$i/10}rem;}
+  .padding-bottom-0#{$i} {padding-bottom: #{$i/10}rem;}
+  .margin-left-0#{$i} {margin-left: #{$i/10}rem;}
+  .margin-right-0#{$i} {margin-right: #{$i/10}rem;}
+  .margin-top-0#{$i} {margin-top: #{$i/10}rem;}
+  .margin-bottom-0#{$i} {margin-bottom: #{$i/10}rem;}
+}
