@@ -10,15 +10,34 @@
 
 
 
-    <div class="grid">
-      <div class="row">
-        <div class="column width-phablet-6 width-phone-12 background--yellow">asdf</div>
-        <div class="column width-phablet-6 width-phone-12 background--blue">asdf</div>
-        <div class="column width-phablet-6 width-phone-12 background--red">asdf</div>
-        <div class="column width-phablet-6 width-phone-12 background--green">asdf</div>
+    <div class="columns">
+      <div class="column">
+        <div class="card yellow">First Column</div>
+      </div>
+      <div class="column">
+        <div class="card blue">Second longer column than the others.</div>
+      </div>
+      <div class="column">
+        <div class="card red">Third Column</div>
       </div>
     </div>
 
+    <br>
+
+    <div class="columns no-gap">
+      <div class="column width-phablet-6 width-phone-12">
+        <div class="card yellow">phablet 6 phone 12</div>
+      </div>
+      <div class="column width-phablet-12 width-phone-6">
+        <div class="card blue">phablet 12 phone 6</div>
+      </div>
+      <div class="column width-phablet-3 width-phone-3">
+        <div class="card red">phablet 3 phone 3</div>
+      </div>
+      <div class="column width-phablet-9 width-phone-3">
+        <div class="card green">phablet 9 phone 3</div>
+      </div>
+    </div>
 
 
   </body>

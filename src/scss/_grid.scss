@@ -1,54 +1,55 @@
-.grid, .row{
+.columns{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-basis: 100%;
-  .column {
-    flex-grow: 2;
-    padding: 1rem;
+  margin: ($settings-column-gap * -1) ($settings-column-gap * -1) auto;
+  &.no-gap {
+    .column {
+      padding: 0;
+    }
   }
 }
 
+.column {
+  flex: 1 1 0;
+  padding: $settings-column-gap;
+}
 
-$num: 12;
-@for $i from 0 through $num {
-  .width-#{$i} {flex: percentage($i / $num) 0;}
-  .offset-#{$i} {margin-left: percentage($i / $num);}
+@for $i from 0 through $settings-column-count {
+  .width-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+  .offset-#{$i} {margin-left: percentage($i / $settings-column-count);}
 }
 
 
 @mixin column--phone() {
-  @for $i from 0 through $num {
-    .width-phone-#{$i} {flex: percentage($i / $num) 0;}
-    .offset-phone-#{$i} {margin-left: percentage($i / $num);}
+  @for $i from 0 through $settings-column-count {
+    .width-phone-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .offset-phone-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
 
 @mixin column--phablet() {
-  @for $i from 0 through $num {
-    .width-phablet-#{$i} {flex: percentage($i / $num) 0;}
-    .offset-phablet-#{$i} {margin-left: percentage($i / $num);}
+  @for $i from 0 through $settings-column-count {
+    .width-phablet-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .offset-phablet-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
 
 @mixin column--tablet() {
-  @for $i from 0 through $num {
-    .width-tablet-#{$i} {flex: percentage($i / $num) 0;}
-    .offset-tablet-#{$i} {margin-left: percentage($i / $num);}
+  @for $i from 0 through $settings-column-count {
+    .width-tablet-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .offset-tablet-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
 
 @mixin column--laptop() {
-  @for $i from 0 through $num {
-    .width-laptop-#{$i} {flex: percentage($i / $num) 0;}
-    .offset-laptop-#{$i} {margin-left: percentage($i / $num);}
+  @for $i from 0 through $settings-column-count {
+    .width-laptop-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .offset-laptop-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
 
 @mixin column--desktop() {
-  @for $i from 0 through $num {
-    .width-desktop-#{$i} {flex: percentage($i / $num) 0;}
-    .offset-desktop-#{$i} {margin-left: percentage($i / $num);}
+  @for $i from 0 through $settings-column-count {
+    .width-desktop-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .offset-desktop-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
