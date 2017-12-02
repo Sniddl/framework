@@ -11,12 +11,14 @@ $screen-desktop: 1440px;
 
 // colors
 // VIEW ALL COLORS IN __COLORS.SCSS
-$colors:   'red'        $red,
-           'orange'     $orange,
-           'yellow'     $yellow,
-           'green'      $green,
-           'blue'       $blue,
-           'indigo'     $indigo,
-           'purple'     $purple,
-           'black'      $black,
-           'white'      $white;
+
+//--------|-----class-----|-----color-----|-----text-----|'
+$colors:   'red'           $red            $white,
+           'orange'        $orange         $white,
+           'yellow'        $yellow         $black,
+           'green'         $green          $white,
+           'blue'          $blue           $white,
+           'indigo'        $indigo         $white,
+           'purple'        $purple         $white,
+           'black'         $black          $white,
+           'white'         $white          $black;

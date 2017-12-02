@@ -1,12 +1,19 @@
+// customize
 @import "__settings";
 @import "_colors";
 @import "_variables";
 @import "_mixins";
 @import "_init";
+
+
+// components
+@import "banner";
 @import "card";
 @import "grid";
 @import "text";
-@import "background";
 
+
+// overwrites
+@import "background";
 @import "media-queries";
 @import "tools";

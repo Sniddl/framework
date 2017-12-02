@@ -1,23 +1,16 @@
 
 
-@each $color in $colors {
-  $class: nth($color, 1);
-  $value: nth($color, 2);
+@each $item in $colors {
+  $class: nth($item, 1);
+  $bg: nth($item, 2);
+  $color: nth($item, 3);
   .#{$class} {
-    background: $value;
-    border-color: darken($value, 10%);
-    color: $white;
+    background: $bg;
+    border-color: darken($bg, 10%);
+    color: $color;
   }
   .background--#{$class} {
-    background: $value;
-    color: white;
-  }
-  @if $class == 'white' {
-    .#{$class} {
-      color: $black;
-    }
-    .background--#{$class} {
-      color: $black;
-    }
+    background: $bg;
+    color: $color;
   }
 }
