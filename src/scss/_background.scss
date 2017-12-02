@@ -1,9 +1,4 @@
-$colors:   'red'        $red,
-           'green'      $green,
-           'blue'       $blue,
-           'white'      $white,
-           'black'      $black,
-           'yellow'     $yellow;
+
 
 @each $color in $colors {
   $class: nth($color, 1);

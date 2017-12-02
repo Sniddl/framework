@@ -243,61 +243,86 @@ p {
 }
 
 .red {
-  background: #f0506e;
-  border-color: #ec2147;
-  color: #f5f5f5;
+  background: #f44336;
+  border-color: #ea1c0d;
+  color: #F5F5F5;
 }
 
 .background--red {
-  background: #f0506e;
+  background: #f44336;
+  color: white;
+}
+
+.orange {
+  background: #FFA500;
+  border-color: #cc8400;
+  color: #F5F5F5;
+}
+
+.background--orange {
+  background: #FFA500;
+  color: white;
+}
+
+.yellow {
+  background: #ffeb3b;
+  border-color: #ffe608;
+  color: #F5F5F5;
+}
+
+.background--yellow {
+  background: #ffeb3b;
   color: white;
 }
 
 .green {
-  background: #32d296;
-  border-color: #26ab79;
-  color: #f5f5f5;
+  background: #8bc34a;
+  border-color: #71a436;
+  color: #F5F5F5;
 }
 
 .background--green {
-  background: #32d296;
+  background: #8bc34a;
   color: white;
 }
 
 .blue {
-  background: #1e87f0;
+  background: #1E87F0;
   border-color: #0e6ecd;
-  color: #f5f5f5;
+  color: #F5F5F5;
 }
 
 .background--blue {
-  background: #1e87f0;
+  background: #1E87F0;
   color: white;
 }
 
-.white {
-  background: #f5f5f5;
-  border-color: #dcdbdb;
-  color: #f5f5f5;
+.indigo {
+  background: #3f51b5;
+  border-color: #32408f;
+  color: #F5F5F5;
 }
 
-.background--white {
-  background: #f5f5f5;
+.background--indigo {
+  background: #3f51b5;
   color: white;
 }
 
-.white {
-  color: #222222;
+.purple {
+  background: #9c27b0;
+  border-color: #771e86;
+  color: #F5F5F5;
 }
 
-.background--white {
-  color: #222222;
+.background--purple {
+  background: #9c27b0;
+  color: white;
 }
 
 .black {
   background: #222222;
   border-color: #090909;
-  color: #f5f5f5;
+  color: #F5F5F5;
 }
 
 .background--black {
@@ -305,15 +330,23 @@ p {
   color: white;
 }
 
-.yellow {
-  background: #faa05a;
-  border-color: #f98429;
-  color: #f5f5f5;
+.white {
+  background: #F5F5F5;
+  border-color: #dcdbdb;
+  color: #F5F5F5;
 }
 
-.background--yellow {
-  background: #faa05a;
+.background--white {
+  background: #F5F5F5;
   color: white;
+}
+
+.white {
+  color: #222222;
+}
+
+.background--white {
+  color: #222222;
 }
 
 @media (max-width: 320px) {

@@ -81,7 +81,7 @@ module.exports = __webpack_require__(2);
 /* 2 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \n$electricBlue     #8EF9F3;\n^\n      Expected ':' after $electricBlue in assignment statement\n      in /Volumes/Storage/Code/framework/src/scss/__variables.scss (line 32, column 1)\n    at runLoaders (/Volumes/Storage/Code/framework/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Volumes/Storage/Code/framework/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Volumes/Storage/Code/framework/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Volumes/Storage/Code/framework/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Volumes/Storage/Code/framework/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.<anonymous> (/Volumes/Storage/Code/framework/node_modules/async/dist/async.js:2257:31)\n    at Object.callback (/Volumes/Storage/Code/framework/node_modules/async/dist/async.js:958:16)\n    at options.error (/Volumes/Storage/Code/framework/node_modules/node-sass/lib/index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
