@@ -1,0 +1,22 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+
+  [class^="body"] {
+      padding: 1.5rem 3rem;
+      align-items: center;
+      flex-basis: 100%;
+  }
+
+  .body--small {padding: 0.75rem 3rem;}
+  .body--medium {padding: 4rem 3rem;}
+  .body--large {padding: 10rem 3rem;}
+  .body--giant {padding: 18rem 3rem;}
+  .body--full {min-height: 100vh;}
+
+  [class^="header"] {
+      padding: 0.5rem 3rem;
+      align-items: center;
+      flex-basis: 100%;
+  }
+}

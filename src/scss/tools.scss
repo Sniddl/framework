@@ -40,3 +40,12 @@
   .margin-top-0#{$i} {margin-top: #{$i/10}rem;}
   .margin-bottom-0#{$i} {margin-bottom: #{$i/10}rem;}
 }
+
+.left{text-align: left; justify-content: flex-start;}
+.right{text-align: right; justify-content: flex-end;}
+.center{text-align: center; justify-content: center;}
+.justify{text-align: justify; justify-content: space-between;}
+
+.align-top{align-self: flex-start;}
+.align-center{align-self: center;}
+.align-bottom{align-self: flex-end;}
