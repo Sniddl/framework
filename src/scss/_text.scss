@@ -1,7 +1,7 @@
 @for $i from 1 through 6 {
   .h#{$i}, h#{$i} {
-    font-size: #{floor(((6 - $i + 1) / 6 + 1) * 10) / 10}rem;
-    margin: #{floor(($i / 6 + 1) * 10) / 10}rem 0;
+    font-size: #{floor(((6 - $i + 1) / 6 + 1) * 10) / 10}em;
+    margin: #{floor(($i / 6 + 1) * 10) / 10}em 0;
   }
 }
 

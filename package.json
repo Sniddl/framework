@@ -1,7 +1,7 @@
 {
-  "name": "framework",
-  "version": "1.0.0",
-  "description": "",
+  "name": "squidcss",
+  "version": "0.0.2",
+  "description": "A simple css framework.",
   "main": "index.js",
   "scripts": {
      "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
