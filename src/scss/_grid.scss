@@ -15,42 +15,60 @@
 }
 
 @for $i from 0 through $settings-column-count {
-  .width-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+  .width-#{$i} {visibility: visible; flex: none; width: percentage($i / $settings-column-count);}
+  @if $i == 0 {
+    .width-#{$i} {visibility: hidden}
+  }
   .offset-#{$i} {margin-left: percentage($i / $settings-column-count);}
 }
 
 
 @mixin column--phone() {
   @for $i from 0 through $settings-column-count {
-    .width-phone-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .width-phone-#{$i} {visibility: visible; flex: none; width: percentage($i / $settings-column-count);}
+    @if $i == 0 {
+      .width-phone-#{$i} {visibility: hidden}
+    }
     .offset-phone-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
 
 @mixin column--phablet() {
   @for $i from 0 through $settings-column-count {
-    .width-phablet-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .width-phablet-#{$i} {visibility: visible; flex: none; width: percentage($i / $settings-column-count);}
+    @if $i == 0 {
+      .width-phablet-#{$i} {visibility: hidden}
+    }
     .offset-phablet-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
 
 @mixin column--tablet() {
   @for $i from 0 through $settings-column-count {
-    .width-tablet-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .width-tablet-#{$i} {visibility: visible; flex: none; width: percentage($i / $settings-column-count);}
+    @if $i == 0 {
+      .width-tablet-#{$i} {visibility: hidden}
+    }
     .offset-tablet-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
 
 @mixin column--laptop() {
   @for $i from 0 through $settings-column-count {
-    .width-laptop-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .width-laptop-#{$i} {visibility: visible; flex: none; width: percentage($i / $settings-column-count);}
+    @if $i == 0 {
+      .width-tablet-#{$i} {visibility: hidden}
+    }
     .offset-laptop-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
 
 @mixin column--desktop() {
   @for $i from 0 through $settings-column-count {
-    .width-desktop-#{$i} {flex: none; width: percentage($i / $settings-column-count);}
+    .width-desktop-#{$i} {visibility: visible; flex: none; width: percentage($i / $settings-column-count);}
+    @if $i == 0 {
+      .width-desktop-#{$i} {visibility: hidden}
+    }
     .offset-desktop-#{$i} {margin-left: percentage($i / $settings-column-count);}
   }
 }
